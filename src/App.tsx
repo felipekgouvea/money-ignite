@@ -1,12 +1,19 @@
-import { ThemeProvider } from "styled-components";
-import { GloblaStyle } from "./styles/global";
-import { defaultTheme } from "./styles/themes/default";
+import { ThemeProvider } from 'styled-components'
+import { GloblaStyle } from './styles/global'
+import { defaultTheme } from './styles/themes/default'
+import { Header } from './components/Header'
+import { AppContainer, Wrapper } from './App'
 
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <GloblaStyle/>
-      <h1>App React</h1>
+      <GloblaStyle />
+      <div>
+        <Header />
+        <Wrapper>
+          <AppContainer></AppContainer>
+        </Wrapper>
+      </div>
     </ThemeProvider>
   )
 }
