@@ -2,9 +2,8 @@ import { ThemeProvider } from 'styled-components'
 import { GloblaStyle } from './styles/global'
 import { defaultTheme } from './styles/themes/default'
 import { Header } from './components/Header'
-import { AppContainer, Wrapper } from './App'
-import { Summary } from './components/Summary'
-import { Table } from './components/Table'
+import { Wrapper } from './App'
+import { Transactions } from './pages/Transactions'
 
 function App() {
   return (
@@ -13,10 +12,7 @@ function App() {
       <div>
         <Header />
         <Wrapper>
-          <AppContainer>
-            <Summary />
-            <Table />
-          </AppContainer>
+          <Transactions />
         </Wrapper>
       </div>
     </ThemeProvider>
