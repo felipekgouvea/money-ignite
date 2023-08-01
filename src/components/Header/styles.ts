@@ -18,11 +18,17 @@ export const HeaderContent = styled.div`
 `
 
 export const ButtonContainer = styled.button`
-  padding: 1.25rem;
+  padding: 0.75rem 1.25rem;
 
   background: ${(props) => props.theme['green-500']};
   color: ${(props) => props.theme.white};
 
   font-weight: bold;
   border-radius: 4px;
+
+  cursor: pointer;
+
+  &:hover {
+    background: ${(props) => props.theme['green-700']};
+  }
 `

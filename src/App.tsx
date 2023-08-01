@@ -3,6 +3,7 @@ import { GloblaStyle } from './styles/global'
 import { defaultTheme } from './styles/themes/default'
 import { Header } from './components/Header'
 import { AppContainer, Wrapper } from './App'
+import { Summary } from './components/Summary'
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
       <div>
         <Header />
         <Wrapper>
-          <AppContainer></AppContainer>
+          <AppContainer>
+            <Summary />
+          </AppContainer>
         </Wrapper>
       </div>
     </ThemeProvider>
