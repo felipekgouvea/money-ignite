@@ -4,6 +4,7 @@ import { defaultTheme } from './styles/themes/default'
 import { Header } from './components/Header'
 import { AppContainer, Wrapper } from './App'
 import { Summary } from './components/Summary'
+import { Table } from './components/Table'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Wrapper>
           <AppContainer>
             <Summary />
+            <Table />
           </AppContainer>
         </Wrapper>
       </div>
